@@ -1,0 +1,66 @@
+<!DOCTYPE html>  //diego.bp@milpaalta2.tecnm.mx
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.js">
+    <script src="./public/js/jquery.js"></script>
+    <script src="./public/js/popper.js"></script>
+    <script src="./public/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="frm_registro" class="row justify-content-center">
+            <div class="col-5">
+                <h1 class="fw-bold">Registro de Usuario</h1>
+
+                <label class="fw-bold" for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" class="form-control mb-3" type="text" placeholder="Nombre">
+
+                <label for="ap-paterno"> Ingresa tu Apellido Paterno</label>
+                <input name="ap-paterno" id="appaterno" class="form-control mb-3" type="text" placeholder="Apellido Paterno">
+
+                <label for="ap-materno"> Ingresa tu Apellido Materno</label>
+                <input name="ap-materno" id="apmaterno" class="form-control mb-3" type="text" placeholder="Apellido Materno">
+
+                <label class="fw-bold" for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input name="fechaNacimiento" id="fechaNacimiento" class="form-control mb-3" type="date">
+
+                <label class="fw-bold" for="genero">Sexo</label>
+                <select class="form-control mb-3" name="genero" id="genero">
+                    <option value="" disabled selected>Selecciona tu sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label class="fw-bold" for="usuario">Usuario</label>
+                <input name="usuario" id="usuario" class="form-control mb-3" type="text" placeholder="Usuario">
+
+                <label class="fw-bold" for="correo">Correo Electrónico</label>
+                <input name="email" id="email" class="form-control mb-3" type="email" placeholder="Correo">
+
+                <label class="fw-bold" for="password">Contraseña</label>
+                <input name="password" id="password" class="form-control mb-3" type="password" placeholder="Contraseña">
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="terminos">
+                    <label class="fw-bold" for="terminos">Acepto términos y condiciones</label>
+                </div>
+
+                <button id="btn_registro" class="btn btn-primary w-100">Registrar</button>
+            </div>
+
+            <div class="col-12 mt-4 d-flex justify-content-center">
+                <button type="button" id="btn_modoOscuro" class="btn btn-dark btn-sm">Modo Oscuro</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

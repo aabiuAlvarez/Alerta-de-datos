@@ -1,0 +1,54 @@
+/* Estilos generales de la página */
+body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #000;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background: linear-gradient(to right, #1f1f1f, #3a3a3a);
+    color: #fff;
+}
+
+/* Estilos del formulario */
+.form-control {
+    border: 1px solid #ccc;
+}
+
+/* Modo oscuro para inputs */
+body.dark-mode .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+/* Estilos del botón de registrar */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Modo oscuro para el botón de registrar */
+body.dark-mode .btn-primary {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+/* Modo oscuro para el botón de cambiar el tema */
+body.dark-mode .btn-dark {
+    background-color: #6c757d;
+}
+
+/* Cambiar el color de las etiquetas en modo oscuro */
+body.dark-mode label {
+    color: #ddd;
+}
+
+/* Cambiar el estilo del título en ambos modos */
+h1.fw-bold {
+    color: #000;
+}
+
+body.dark-mode h1.fw-bold {
+    color: #fff;
+}
